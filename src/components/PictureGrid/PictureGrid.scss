@@ -1,0 +1,78 @@
+// <--------  GENERAL  -------->
+.ComeAndBeInspired {
+  color: white;
+  background-color: black;
+}
+
+// <--------  MOBILE  -------->
+@media (max-width: 767px) {
+  .Picture-Grid {
+    margin: 31.915vw 3.989vw;
+  }
+
+  .YourDayAtTheGallery {
+    margin-top: 2.66vw;
+  }
+
+  .ComeAndBeInspired {
+    padding: 12.766vw 6.383vw 4.787vw 6.383vw;
+  }
+}
+
+// <--------  TABLET AND DESKTOP  -------->
+@media (min-width: 768px) {
+  .Picture-Grid {
+    display: grid;
+    justify-content: center;
+    margin: 12.5vw 11.458vw;
+    grid-template-columns: 25% 2.07% 7.66% 14.14% 4.05%;
+    grid-template-rows: 2.6% 10.61% 16.35% 27.22% 32.78%;
+    gap: 1.8% 2.7%;
+  }
+
+  .Picture-Grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Picture-Grid .YourDayAtTheGallery {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+  .Picture-Grid .description {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+  }
+
+  .Picture-Grid .RoomWithTribalArtImage {
+    grid-row: 1 / 4;
+    grid-column: 4 / 7;
+  }
+
+  .Picture-Grid .BenchImage {
+    grid-row: 4 / 6;
+    grid-column: 1 / 5;
+  }
+  .Picture-Grid .HallwayArtImage {
+    grid-row: 4 / 5;
+    grid-column: 5 / 7;
+  }
+  .Picture-Grid .ComeAndBeInspired {
+    grid-row: 5 / 6;
+    grid-column: 5 / 7;
+    padding: 4.514vw 3.125vw 0vw 3.125vw;
+    p {
+      padding-top: 3.125vw;
+      padding-bottom: 3.125vw;
+    }
+  }
+}
+
+// <--------  ONLY DESKTOP  -------->
+
+@media (min-width: 921px) {
+  .Picture-Grid {
+    gap: 2.7%;
+  }
+}
