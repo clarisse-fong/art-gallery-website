@@ -13,15 +13,24 @@ function Footer() {
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </p>
       <div className="social-media">
-        <a href="facebook.com">
-          <img className="FB" src={Facebook} alt="Facebook Logo"></img>
-        </a>
-        <a href="instagram.com">
-          <img className="IG" src={Instagram} alt="Instagram Logo"></img>
-        </a>
-        <a href="twitter.com">
-          <img className="Twitter" src={Twitter} alt="Twitter Logo"></img>
-        </a>
+        <img
+          className="FB"
+          src={Facebook}
+          alt="Facebook Logo"
+          onClick={() => window.location.replace("https://facebook.com")}
+        ></img>
+        <img
+          className="IG"
+          src={Instagram}
+          alt="Instagram Logo"
+          onClick={() => window.location.replace("https://instagram.com")}
+        ></img>
+        <img
+          className="Twitter"
+          src={Twitter}
+          alt="Twitter Logo"
+          onClick={() => window.location.replace("https://twitter.com")}
+        ></img>
       </div>
     </div>
   );
