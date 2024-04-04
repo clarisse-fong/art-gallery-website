@@ -1,108 +1,93 @@
+* {
+  margin: 0px;
+}
+
 h1,
 h2,
 h3 {
   font-family: "Big Shoulders Display";
 }
 
-h1 {
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 55px;
-  padding: 32px 16px 10px 16px;
-}
-
-h2 {
-  font-size: 45px;
-  font-weight: 800;
-  line-height: 45px;
-  padding: 25px 14px 25px 14px;
-}
-
 p {
   font-family: "Outfit";
-  font-size: 18px;
-  line-height: 28px;
-  padding: 14px 16px 14px 16px;
-  font-weight: 200;
 }
 
-.ModernArtGallery {
-  &img {
+// <--------  MOBILE  -------->
+@media (max-width: 767px) {
+  .img-mobile {
     width: 100%;
-    padding: 0px;
+    padding-bottom: 3.989vw;
+  }
+  .img-tablet {
+    display: none;
+  }
+  .img-desktop {
+    display: none;
+  }
+  h1 {
+    font-size: 15.957vw;
+    font-weight: 800;
+    line-height: 14.628vw;
   }
 
-  button {
-    padding: 0px;
-    margin: 0px 16px 120px 16px;
-    border-style: none;
-    background-color: transparent;
-    p {
-      font-size: 20px;
-      font-weight: 700;
-      background-color: black;
-      color: white;
-      font-family: "Big Shoulders Display";
-      margin: 0px;
-      letter-spacing: 3.64px;
-      padding: 28px;
-      display: inline;
-    }
-
-    img {
-      background-color: #d5966c;
-      padding: 28px 24px 28px 24px;
-      vertical-align: center;
-      margin: 3px 0px 10px 0px;
-      width: auto;
-    }
-  }
-}
-
-.BenchWithArt,
-.ComeAndBeInspired,
-.YourDayAtTheGallery {
-  img {
-    padding: 8px 16px 8px 16px;
-    width: 100%;
-  }
-}
-
-.ComeAndBeInspired {
-  div {
-    padding: 0px;
-    margin: 0px;
-  }
-  .box {
-    color: white;
-    background-color: black;
-    margin: 16px 16px 16px 16px;
-    padding: 48px 16px 16px 16px;
-    overflow: hidden;
+  h2 {
+    font-size: 13.298vw;
+    font-weight: 800;
+    line-height: 11.968vw;
+    margin: 0vw;
   }
 
   p {
-    padding: 0px 24px 50px 24px;
-    margin: 0px;
+    font-size: 4.787vw;
+    font-weight: 200;
+    line-height: 7.557vw;
+    padding: 7.979vw 0vw;
+    margin: 0vw;
   }
 }
 
-.Footer {
-  width: 100%;
-  color: white;
-  background-color: black;
-  padding: 48px 32px 48px 32px;
-  margin-top: 118px;
+// <--------  TABLET AND DESKTOP  -------->
+@media (min-width: 768px) {
+  .img-mobile {
+    display: none;
+  }
+  .img-tablet {
+    display: block;
+  }
+  .img-desktop {
+    display: none;
+  }
+  h1 {
+    font-size: 6.667vw;
+    font-weight: 900;
+    line-height: 6.111vw;
+  }
+
+  h2 {
+    font-size: 4.167vw;
+    font-weight: 800;
+    line-height: 4.167vw;
+    margin: 0vw;
+  }
+
   p {
-    font-size: 16px;
+    font-size: 1.528vw;
+    font-weight: 200;
+    line-height: 2.222vw;
+    margin: 0vw;
   }
+}
 
-  h3 {
-    line-height: 30px;
-    font-size: 31px;
+// <--------  ONLY DESKTOP  -------->
+
+@media (min-width: 921px) {
+  .img-mobile {
+    display: none;
   }
-
-  img {
-    object-fit: none;
+  .img-tablet {
+    display: none;
+  }
+  .img-desktop {
+    display: block;
   }
 }
